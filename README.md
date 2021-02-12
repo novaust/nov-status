@@ -40,7 +40,7 @@ If you want to run status when dwm start, there're two options:
 	```
 
 ## Thanks
-This project refers to some ideas from following projects, thanks for these developers.
+This project refers to some ideas from following repo, thanks for these developers.
 + [thytom/dwmbar](https://github.com/thytom/dwmbar)
 + [joestandring/dwm-bar](https://github.com/joestandring/dwm-bar)
 
