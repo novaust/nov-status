@@ -1,6 +1,6 @@
 #!/bin/bash
 
-memory() {
+function memory() {
 	total=$(free | grep "Mem" | awk {'print $2'})
 	used=$(free | grep "Mem" | awk {'print $3'})
 	percentage=$(awk 'BEGIN{printf "%.1f\n", ('$used' / '$total') * 100}')
