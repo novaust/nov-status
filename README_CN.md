@@ -39,7 +39,7 @@ $ ./nov-status.sh
 	```
 
 ## 致谢
-本项目参考了以下仓库的部分思路, 向这些开发者表示感谢.
+本应用参考了以下仓库的部分思路, 向这些开发者表示感谢.
 + [thytom/dwmbar](https://github.com/thytom/dwmbar)
 + [joestandring/dwm-bar](https://github.com/joestandring/dwm-bar)
 
