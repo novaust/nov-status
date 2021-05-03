@@ -10,23 +10,9 @@ function cmus() {
 		playStatus=$(cmus-remote -Q | grep 'status' | sed 's/status //g')
 		random=$(cmus-remote -Q | grep 'set shuffle' | sed 's/set shuffle //g')
 
-		if [ "$playStatus" = "playing" ]; then
-			playStatus="契"
-		else
-			playStatus=""
-		fi
-
-		if [ "$random" = "true" ]; then
-			random="咽"
-		else
-			random="劣"
-		fi
-		
+		[ "$playStatus" = "playing" ] && playStatus="契" || playStatus=""
+		[ "$random" = "true" ] && random="咽" || random="劣"
 		echo "$playStatus $random $artist - $title"
-	
-	else
-		echo "ﱙ Music"
 	fi
-
 }
 

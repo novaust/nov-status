@@ -1,6 +1,5 @@
 #!/bin/bash
 
 function dateTime() {
-	echo " $(date "+%a %Y-%m-%d %T")"
+	echo "⏽ $(date "+%b %d %a %H:%M")"
 }
-

@@ -25,13 +25,13 @@ for num in "${!arrayFunc[@]}"; do
 done
 
 # main
+sep=" "
 while true; do
-	separator=" "
 	display=""
 	for func in "${!arrayFunc[@]}"; do
-		display="$display$separator$(${arrayFunc[$func]})"
+		str=$(${arrayFunc[$func]})
+		[ -n "$str" ] && display=$display$sep$str
 	done
-
 	xsetroot -name "$display"
 	sleep 1
 done
